@@ -1,0 +1,43 @@
+{
+  "id": "debix-model-c-ubuntu",
+  "name": "Ubuntu 22.04-L6.1.36",
+  "bootMode": "sd,emmc",
+  "releaseDate": "2024-12-03",
+  "osName": "Ubuntu 22.04",
+  "kernelVersion": "L6.1.36",
+  "firmwareVersion": "V1.0.1",
+  "variants": [
+    {
+      "id": "debix-model-c-ubuntu-sd",
+      "name": "Ubuntu 22.04-L6.1.36",
+      "fileName": "DEBIX-Model-C_Ubuntu22.04-SDBoot-L6.1.36-V1.0.1-20240827.img",
+      "url": "http://192.168.10.219/NXP/Model-C/Debian/DEBIX-Model-C_Ubuntu22.04-SDBoot-L6.1.36-V1.0.1-20240827.img",
+      "md5": "3E5A3BDADE926C9A98878F4CECACBB67",
+      "size": "6.29GB",
+      "supportedMedia": [
+        "sd_usb"
+      ],
+      "burnMethods": {
+        "sd_usb": {
+          "type": "raw_write"
+        }
+      }
+    },
+    {
+      "id": "debix-model-c-ubuntu-emmc",
+      "name": "Ubuntu 22.04-L6.1.36",
+      "fileName": "DEBIX-Model-C_Ubuntu22.04-SDFlash-L6.1.36-V1.0.1-20240827.img",
+      "url": "http://192.168.10.219/NXP/Model-C/Debian/DEBIX-Model-C_Ubuntu22.04-SDFlash-L6.1.36-V1.0.1-20240827.img",
+      "md5": "42008920C6908344F721DC9BB549EFE1",
+      "size": "4.00GB",
+      "supportedMedia": [
+        "emmc_via_sd"
+      ],
+      "burnMethods": {
+        "emmc_via_sd": {
+          "type": "raw_write"
+        }
+      }
+    }
+  ]
+}

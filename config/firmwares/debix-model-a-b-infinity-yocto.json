@@ -1,0 +1,50 @@
+{
+  "id": "debix-model-a-b-infinity-yocto",
+  "name": "Yocto5.2-L6.6.36",
+  "bootMode": "sd,emmc",
+  "releaseDate": "2026-03-25",
+  "osName": "Yocto5.2",
+  "kernelVersion": "L6.6.36",
+  "firmwareVersion": "V1.0.6",
+  "variants": [
+    {
+      "id": "debix-model-a-b-infinity-yocto-default",
+      "name": "Yocto5.2-L6.6.36",
+      "fileName": "DEBIX-Model-A-B-Infinity_Yocto5.2_L6.6.36_V1.0.6_20260325.wic",
+      "url": "http://192.168.10.219/NXP/Model-A-B-Infinity/Yocto/DEBIX-Model-A-B-Infinity_Yocto5.2_L6.6.36_V1.0.6_20260325.wic",
+      "md5": "A6CC992C7EA2250F4FFCE9E664195DD7",
+      "size": "10.4GB",
+      "ubootUrl": "http://192.168.10.219/NXP/Model-A-B-Infinity/Yocto/DEBIX-Model-A-B-Infinity_Yocto5.2_L6.6.36_V1.0.6_20260325.bin",
+      "ubootFilename": "DEBIX-Model-A-B-Infinity_Yocto5.2_L6.6.36_V1.0.6_20260325.bin",
+      "ubootMd5": "703CFF74803B4E8FADD90153A44C65EE",
+      "supportedMedia": [
+        "sd_usb",
+        "sd_board",
+        "emmc"
+      ],
+      "burnMethods": {
+        "sd_usb": {
+          "type": "raw_write"
+        },
+        "sd_board": {
+          "type": "platform_tool",
+          "args": [
+            "-b",
+            "sd_all",
+            "{ubootPath}",
+            "{imagePath}"
+          ]
+        },
+        "emmc": {
+          "type": "platform_tool",
+          "args": [
+            "-b",
+            "emmc_all",
+            "{ubootPath}",
+            "{imagePath}"
+          ]
+        }
+      }
+    }
+  ]
+}

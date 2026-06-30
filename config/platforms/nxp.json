@@ -1,0 +1,8 @@
+{
+  "id": "nxp",
+  "name": "NXP",
+  "logo": "assets/logos/nxp.png",
+  "burnToolCommand": "nxp-uuu/uuu",
+  "detectCommand": "nxp-uuu/uuu",
+  "detectArgs": ["-lsusb"]
+}

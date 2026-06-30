@@ -1,0 +1,14 @@
+{
+  "customHardwareCheck": {
+    "emmc": [
+      "1. Connect board OTG port to PC via USB cable",
+      "2. Press and hold Maskrom button, then connect power",
+      "3. Release Maskrom button after PC detects Maskrom device"
+    ]
+  },
+  "customPostBurn": {
+    "emmc": [
+      "1. System will boot automatically"
+    ]
+  }
+}

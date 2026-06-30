@@ -1,0 +1,25 @@
+{
+  "customHardwareCheck": {
+    "sd_usb": [
+      "1. Insert the MicroSD card into a USB 3.0 card reader, then connect the reader to your PC."
+    ],
+    "emmc": [
+      "1. Set Boot Mode Switch to USB Download",
+      "2. Connect the board OTG port to your PC via a USB cable.",
+      "3. Power on the board. Board enters download mode on power-up."
+    ]
+  },
+  "customPostBurn": {
+    "sd_usb": [
+      "1. Safely eject and remove the MicroSD card from the USB card reader.",
+      "2. Insert the MicroSD card into the board's MicroSD card slot.",
+      "3. Set the board's boot mode switch to MicroSD Boot Mode.",
+      "4. Connect the power adapter and wait for the board to boot into your new system."
+    ],
+    "emmc": [
+      "1. Disconnect all cables from the board",
+      "2. Set the board's boot mode switch to eMMC Boot Mode.",
+      "3. Connect the power adapter and wait for the board to boot into your new system."
+    ]
+  }
+}

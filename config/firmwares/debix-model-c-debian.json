@@ -1,0 +1,50 @@
+{
+  "id": "debix-model-c-debian",
+  "name": "Debian 12-L6.6.3",
+  "bootMode": "sd,emmc",
+  "releaseDate": "2024-12-03",
+  "osName": "Debian 12",
+  "kernelVersion": "L6.6.3",
+  "firmwareVersion": "V1.1",
+  "variants": [
+    {
+      "id": "debix-model-c-debian-default",
+      "name": "Debian 12-L6.6.3",
+      "fileName": "DEBIX-Model-C_Debian12_L6.6.3_V1.1_20241203.wic",
+      "url": "http://192.168.10.219/NXP/Model-C/Debian/DEBIX-Model-C_Debian12_L6.6.3_V1.1_20241203.wic",
+      "md5": "652C5AD347120E86305AD5ED1D9257F0",
+      "size": "8.0GB",
+      "ubootUrl": "http://192.168.10.219/NXP/Model-C/Debian/DEBIX-Model-C_Debian12_L6.6.3_V1.1_20241203.bin",
+      "ubootFilename": "DEBIX-Model-C_Debian12_L6.6.3_V1.1_20241203.bin",
+      "ubootMd5": "2B1CEFBB3B7949A5A8D149A18E4BFE0C",
+      "supportedMedia": [
+        "sd_usb",
+        "sd_board",
+        "emmc"
+      ],
+      "burnMethods": {
+        "sd_usb": {
+          "type": "raw_write"
+        },
+        "sd_board": {
+          "type": "platform_tool",
+          "args": [
+            "-b",
+            "sd_all",
+            "{ubootPath}",
+            "{imagePath}"
+          ]
+        },
+        "emmc": {
+          "type": "platform_tool",
+          "args": [
+            "-b",
+            "emmc_all",
+            "{ubootPath}",
+            "{imagePath}"
+          ]
+        }
+      }
+    }
+  ]
+}

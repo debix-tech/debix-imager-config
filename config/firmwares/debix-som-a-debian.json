@@ -1,0 +1,50 @@
+{
+  "id": "debix-som-a-debian",
+  "name": "Debian12-L6.6.3",
+  "bootMode": "sd,emmc",
+  "releaseDate": "2024-08-13",
+  "osName": "Debian 12",
+  "kernelVersion": "L6.6.3",
+  "firmwareVersion": "V1.1",
+  "variants": [
+    {
+      "id": "debix-som-a-debian-default",
+      "name": "Debian12-L6.6.3",
+      "fileName": "DEBIX-SOM-A_Debian12_L6.6.6_V1.1_20240813.wic",
+      "url": "http://192.168.10.219/NXP/SOM-A/Debian/DEBIX-SOM-A_Debian12_L6.6.6_V1.1_20240813.wic",
+      "md5": "7E5C1FF4BCC128304FDE525CFACB3C5D",
+      "size": "8.0GB",
+      "ubootUrl": "http://192.168.10.219/NXP/SOM-A/Debian/DEBIX-SOM-A_Debian12_L6.6.6_V1.1_20240813.bin",
+      "ubootFilename": "DEBIX-SOM-A_Debian12_L6.6.6_V1.1_20240813.bin",
+      "ubootMd5": "62706D68696AEA5D968115D7FD926BBA",
+      "supportedMedia": [
+        "sd_usb",
+        "sd_board",
+        "emmc"
+      ],
+      "burnMethods": {
+        "sd_usb": {
+          "type": "raw_write"
+        },
+        "sd_board": {
+          "type": "platform_tool",
+          "args": [
+            "-b",
+            "sd_all",
+            "{ubootPath}",
+            "{imagePath}"
+          ]
+        },
+        "emmc": {
+          "type": "platform_tool",
+          "args": [
+            "-b",
+            "emmc_all",
+            "{ubootPath}",
+            "{imagePath}"
+          ]
+        }
+      }
+    }
+  ]
+}

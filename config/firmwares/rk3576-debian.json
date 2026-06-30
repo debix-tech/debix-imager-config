@@ -1,0 +1,31 @@
+{
+  "id": "rk3576-debian",
+  "name": "Debian 12",
+  "bootMode": "eMMC",
+  "releaseDate": "2025-10-27",
+  "osName": "Debian 12",
+  "kernelVersion": "L6.1.84",
+  "firmwareVersion": "V1.4",
+  "variants": [
+    {
+      "id": "rk3576-debian-default",
+      "name": "Debian 12",
+      "fileName": "DEBIX-R3576-01_Debian12_L6.1.84_V1.4_20251027.img",
+      "url": "http://192.168.10.219/Rockchip/R3576-01/Debian/DEBIX-R3576-01_Debian12_L6.1.84_V1.4_20251027.img",
+      "md5": "A74D66AC49314A84C94DE22298AC9041",
+      "size": "5.4GB",
+      "supportedMedia": [
+        "emmc"
+      ],
+      "burnMethods": {
+        "emmc": {
+          "type": "platform_tool",
+          "args": [
+            "uf",
+            "{imagePath}"
+          ]
+        }
+      }
+    }
+  ]
+}

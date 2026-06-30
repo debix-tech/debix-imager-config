@@ -1,0 +1,50 @@
+{
+  "id": "debix-model-a-b-infinity-ubuntu",
+  "name": "Ubuntu22.04-L6.1.22",
+  "bootMode": "sd,emmc",
+  "releaseDate": "2026-03-25",
+  "osName": "Ubuntu22.04",
+  "kernelVersion": "L6.1.22",
+  "firmwareVersion": "V3.14",
+  "variants": [
+    {
+      "id": "debix-model-a-b-infinity-ubuntu-default",
+      "name": "Ubuntu22.04-L6.1.22",
+      "fileName": "DEBIX-Model-A-B-Infinity_Ubuntu22.04_L6.1.22_V3.14_20260325.img",
+      "url": "http://192.168.10.219/NXP/Model-A-B-Infinity/Ubuntu/DEBIX-Model-A-B-Infinity_Ubuntu22.04_L6.1.22_V3.14_20260325.img",
+      "md5": "16C56AA936BC02503C8AB4CC4DF4B048",
+      "size": "4.0GB",
+      "ubootUrl": "http://192.168.10.219/NXP/Model-A-B-Infinity/Ubuntu/DEBIX-Model-A-B-Infinity_Ubuntu22.04_L6.1.22_V3.14_20260325.bin",
+      "ubootFilename": "DEBIX-Model-A-B-Infinity_Ubuntu22.04_L6.1.22_V3.14_20260325.bin",
+      "ubootMd5": "42C7D2DAAD20C5ED1E436DBC2A6B09A7",
+      "supportedMedia": [
+        "sd_usb",
+        "sd_board",
+        "emmc"
+      ],
+      "burnMethods": {
+        "sd_usb": {
+          "type": "raw_write"
+        },
+        "sd_board": {
+          "type": "platform_tool",
+          "args": [
+            "-b",
+            "sd_all",
+            "{ubootPath}",
+            "{imagePath}"
+          ]
+        },
+        "emmc": {
+          "type": "platform_tool",
+          "args": [
+            "-b",
+            "emmc_all",
+            "{ubootPath}",
+            "{imagePath}"
+          ]
+        }
+      }
+    }
+  ]
+}

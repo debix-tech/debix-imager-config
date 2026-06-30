@@ -1,0 +1,4 @@
+{
+  "version": "3.0",
+  "updateCheckUrl": "http://192.168.10.219/content/manifest.json"
+}

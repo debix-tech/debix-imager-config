@@ -1,0 +1,50 @@
+{
+  "id": "debix-model-a-b-infinity-debian",
+  "name": "Debian12-L6.6.3",
+  "bootMode": "sd,emmc",
+  "releaseDate": "2026-03-31",
+  "osName": "Debian12",
+  "kernelVersion": "L6.6.3",
+  "firmwareVersion": "V1.1.3",
+  "variants": [
+    {
+      "id": "debix-model-a-b-infinity-debian-default",
+      "name": "Debian12-L6.6.3",
+      "fileName": "DEBIX-Model-A-B-Infinity_Debian12.6_L6.6.3_V1.1.3_20260331.wic",
+      "url": "http://192.168.10.219/NXP/Model-A-B-Infinity/Debian/DEBIX-Model-A-B-Infinity_Debian12.6_L6.6.3_V1.1.3_20260331.wic",
+      "md5": "334EED7808E5A2DD271122B607BC6939",
+      "size": "8.0GB",
+      "ubootUrl": "http://192.168.10.219/NXP/Model-A-B-Infinity/Debian/DEBIX-Model-A-B-Infinity_Debian12.6_L6.6.3_V1.1.3_20260331.bin",
+      "ubootFilename": "DEBIX-Model-A-B-Infinity_Debian12.6_L6.6.3_V1.1.3_20260331.bin",
+      "ubootMd5": "0ABF924A8E77C0E0F2CEE801AF91A0A1",
+      "supportedMedia": [
+        "sd_usb",
+        "sd_board",
+        "emmc"
+      ],
+      "burnMethods": {
+        "sd_usb": {
+          "type": "raw_write"
+        },
+        "sd_board": {
+          "type": "platform_tool",
+          "args": [
+            "-b",
+            "sd_all",
+            "{ubootPath}",
+            "{imagePath}"
+          ]
+        },
+        "emmc": {
+          "type": "platform_tool",
+          "args": [
+            "-b",
+            "emmc_all",
+            "{ubootPath}",
+            "{imagePath}"
+          ]
+        }
+      }
+    }
+  ]
+}

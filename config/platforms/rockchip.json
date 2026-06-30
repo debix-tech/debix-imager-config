@@ -1,0 +1,8 @@
+{
+  "id": "rockchip",
+  "name": "Rockchip",
+  "logo": "assets/logos/rockchip.png",
+  "burnToolCommand": "rockchip-upgrade_tool/upgrade_tool",
+  "detectCommand": "rockchip-upgrade_tool/upgrade_tool",
+  "detectArgs": ["ld"]
+}

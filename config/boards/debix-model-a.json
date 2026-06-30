@@ -1,0 +1,199 @@
+{
+  "id": "debix-model-a",
+  "name": "DEBIX Model A",
+  "description": "NXP i.MX 8M Plus Series",
+  "ddr": "2/4/8GB LPDDR4",
+  "bootModes": [
+    "sd",
+    "emmc"
+  ],
+  "firmwareIds": [
+    "debix-model-a-b-infinity-debian",
+    "debix-model-a-b-infinity-ubuntu",
+    "debix-model-a-b-infinity-yocto"
+  ],
+  "hardwareCheckPages": {
+    "sd_usb": [
+      {
+        "title": "Insert MicroSD Card into USB Reader",
+        "text": "Insert the MicroSD card into a USB 3.0 card reader, then connect the reader to your PC.",
+        "animImageA": "assets/hardware_pre/debix-model-ab/T0-R0.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-ab/T1-R0.jpg",
+        "animImageC": "assets/hardware_pre/debix-model-ab/T1-R1.jpg",
+        "imageFallbackUrl": ""
+      }
+    ],
+    "sd_board": [
+      {
+        "title": "Set Boot Mode Switch to USB Download",
+        "text": "Set the boot mode switch to '01', USB Download Mode.",
+        "image": "assets/hardware_pre/debix-model-ab/S-01.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Insert MicroSD Card into Board",
+        "text": "Insert the MicroSD card into the board's MicroSD card slot.",
+        "animImageA": "assets/hardware_pre/debix-model-ab/T0.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-ab/T1.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Connect Board to PC",
+        "text": "Connect the board OTG port to your PC via a USB-Type C cable.",
+        "animImageA": "assets/hardware_pre/debix-model-ab/T1-O0.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-ab/T1-O1.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Power On the Board",
+        "text": "Connect the 5V/3A power adapter. The board enters MicroSD boot mode on power-up.",
+        "animImageA": "assets/hardware_pre/debix-model-ab/T1-O1-P0.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-ab/T1-O1-P1.jpg",
+        "imageFallbackUrl": ""
+      }
+    ],
+    "emmc": [
+      {
+        "title": "Set Boot Mode Switch to USB Download",
+        "text": "Set the boot mode switch to '01', USB Download Mode.",
+        "image": "assets/hardware_pre/debix-model-ab/S-01.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Connect Board to PC",
+        "text": "Connect the board OTG port to your PC via a USB-Type C cable.",
+        "animImageA": "assets/hardware_pre/debix-model-ab/O0.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-ab/O1.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Power On the Board",
+        "text": "Connect the 5V/3A power adapter. The board enters download mode on power-up.",
+        "animImageA": "assets/hardware_pre/debix-model-ab/O1-P0.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-ab/O1-P1.jpg",
+        "imageFallbackUrl": ""
+      }
+    ],
+    "emmc_via_sd": [
+      {
+        "title": "Insert MicroSD Card into USB Reader",
+        "text": "Insert the MicroSD card into a USB 3.0 card reader, then connect the reader to your PC.",
+        "imageFallbackUrl": "",
+        "animImageA": "assets/hardware_pre/debix-model-ab/T0-R0.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-ab/T1-R0.jpg",
+        "animImageC": "assets/hardware_pre/debix-model-ab/T1-R1.jpg"
+      }
+    ]
+  },
+  "postBurnPages": {
+    "sd_usb": [
+      {
+        "title": "Remove MicroSD Card from USB Reader",
+        "text": "Safely eject and remove the MicroSD card from the USB card reader.",
+        "animImageA": "assets/hardware_pre/debix-model-ab/T1-R1.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-ab/T1-R0.jpg",
+        "animImageC": "assets/hardware_pre/debix-model-ab/T0-R0.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Insert MicroSD Card into Board",
+        "text": "Insert the MicroSD card into the board's MicroSD card slot.",
+        "animImageA": "assets/hardware_pre/debix-model-ab/T0.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-ab/T1.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Set Boot Mode to MicroSD",
+        "text": "Set the board's boot mode switch to '11', MicroSD Boot Mode.",
+        "image": "assets/hardware_pre/debix-model-ab/S-11.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Power On the Board",
+        "text": "Connect the power adapter and wait for the board to boot into your new system.",
+        "animImageA": "assets/hardware_pre/debix-model-ab/T1-P0.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-ab/T1-P1.jpg",
+        "imageFallbackUrl": ""
+      }
+    ],
+    "sd_board": [
+      {
+        "title": "Flash Complete",
+        "text": "Disconnect all board cables",
+        "image": "assets/hardware_pre/debix-model-ab/FT1.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Set Boot Mode to MicroSD",
+        "text": "Set the board's boot mode switch to '11', MicroSD Boot Mode.",
+        "image": "assets/hardware_pre/debix-model-ab/S-11.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Power On the Board",
+        "text": "Connect the power adapter and wait for the board to boot into your new system.",
+        "animImageA": "assets/hardware_pre/debix-model-ab/T1-P0.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-ab/T1-P1.jpg",
+        "imageFallbackUrl": ""
+      }
+    ],
+    "emmc": [
+      {
+        "title": "Flash Complete",
+        "text": "Disconnect all board cables",
+        "image": "assets/hardware_pre/debix-model-ab/A0.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Set Boot Mode to eMMC",
+        "text": "Set the board's boot mode switch to '10', eMMC Boot Mode.",
+        "image": "assets/hardware_pre/debix-model-ab/S-10.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Power On the Board",
+        "text": "Connect the power adapter and wait for the board to boot into your new system.",
+        "animImageA": "assets/hardware_pre/debix-model-ab/P0.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-ab/P1.jpg",
+        "imageFallbackUrl": ""
+      }
+    ],
+    "emmc_via_sd": [
+      {
+        "title": "Remove MicroSD Card from USB Reader",
+        "text": "Safely eject and remove the MicroSD card from the USB card reader.",
+        "animImageA": "assets/hardware_pre/debix-model-ab/T1-R1.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-ab/T1-R0.jpg",
+        "animImageC": "assets/hardware_pre/debix-model-ab/T0-R0.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Insert MicroSD Card into Board",
+        "text": "Insert the MicroSD card into the board MicroSD card slot.",
+        "animImageA": "assets/hardware_pre/debix-model-ab/T0.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-ab/T1.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Set Boot Mode to MicroSD",
+        "text": "Set the board boot mode switch to MicroSD Boot Mode.",
+        "image": "assets/hardware_pre/debix-model-ab/S-11.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Power On the Board",
+        "text": "Connect the power adapter. The board will boot from SD card and automatically install the system to eMMC. This may take several minutes.",
+        "animImageA": "assets/hardware_pre/debix-model-ab/T1-P0.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-ab/T1-P1.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Installation Complete",
+        "text": "Once installation finishes, power off the board. Set the boot mode switch to eMMC Boot Mode to boot from the onboard eMMC.",
+        "image": "assets/hardware_pre/debix-model-ab/S-10.jpg",
+        "imageFallbackUrl": ""
+      }
+    ]
+  },
+  "platformId": "nxp"
+}

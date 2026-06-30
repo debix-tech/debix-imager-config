@@ -1,0 +1,8 @@
+{
+  "id": "mtk",
+  "name": "MediaTek",
+  "logo": "assets/logos/mediatek.png",
+  "burnToolCommand": "",
+  "detectCommand": "",
+  "detectArgs": []
+}

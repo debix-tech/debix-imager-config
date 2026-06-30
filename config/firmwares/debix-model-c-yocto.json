@@ -1,0 +1,43 @@
+{
+  "id": "debix-model-c-yocto",
+  "name": "Yocto Project 5.0",
+  "bootMode": "sd,emmc",
+  "releaseDate": "2026-05-28",
+  "osName": "Yocto Project 5.0",
+  "kernelVersion": "L6.1.36",
+  "firmwareVersion": "V1.0.4",
+  "variants": [
+    {
+      "id": "debix-model-c-yocto-sd",
+      "name": "Yocto Project 5.0-L6.1.36",
+      "fileName": "DEBIX-Model-C_Yocto5.0_L6.1.36_V1.0.4_20260528.img",
+      "url": "http://192.168.10.219/NXP/Model-C/Yocto/DEBIX-Model-C_Yocto5.0-SDBoot_L6.1.36_V1.0.4_20260528.wic",
+      "md5": "FF1CFD7CB56499D8F21CB50CCE666F63",
+      "size": "6.36GB",
+      "supportedMedia": [
+        "sd_usb"
+      ],
+      "burnMethods": {
+        "sd_usb": {
+          "type": "raw_write"
+        }
+      }
+    },
+    {
+      "id": "debix-model-c-yocto-emmc",
+      "name": "Yocto Project 5.0-L6.1.36",
+      "fileName": "DEBIX-Model-C_Yocto5.0-SDFlash_L6.1.36_V1.0.4_20260528.img",
+      "url": "http://192.168.10.219/NXP/Model-C/Yocto/DEBIX-Model-C_Yocto5.0-SDFlash_L6.1.36_V1.0.4_20260528.img",
+      "md5": "1EA9730E7298AEE179445DDB3E61BEFB",
+      "size": "4.00GB",
+      "supportedMedia": [
+        "emmc_via_sd"
+      ],
+      "burnMethods": {
+        "emmc_via_sd": {
+          "type": "raw_write"
+        }
+      }
+    }
+  ]
+}

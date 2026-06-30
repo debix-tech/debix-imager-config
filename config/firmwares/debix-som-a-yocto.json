@@ -1,0 +1,50 @@
+{
+  "id": "debix-som-a-yocto",
+  "name": "Yocto4.2-L6.1.22",
+  "bootMode": "sd,emmc",
+  "releaseDate": "2026-04-27",
+  "osName": "Yocto 4.2",
+  "kernelVersion": "L6.1.22",
+  "firmwareVersion": "V2.2",
+  "variants": [
+    {
+      "id": "debix-som-a-yocto-default",
+      "name": "Yocto4.2-L6.1.22",
+      "fileName": "DEBIX-SOM-A_Yocto4.2_L6.1.22_V2.2_20240815.img",
+      "url": "http://192.168.10.219/NXP/SOM-A/Yocto/DEBIX-SOM-A_Yocto4.2_L6.1.22_V2.2_20240815.img",
+      "md5": "A8EA52AC3BA5C3E588706660A7475A29",
+      "size": "7.0GB",
+      "ubootUrl": "http://192.168.10.219/NXP/SOM-A/Yocto/DEBIX-SOM-A_Yocto4.2_L6.1.22_V2.2_20240815.bin",
+      "ubootFilename": "DEBIX-SOM-A_Yocto4.2_L6.1.22_V2.2_20240815.bin",
+      "ubootMd5": "66AC9A68734588747C699001520DC332",
+      "supportedMedia": [
+        "sd_usb",
+        "sd_board",
+        "emmc"
+      ],
+      "burnMethods": {
+        "sd_usb": {
+          "type": "raw_write"
+        },
+        "sd_board": {
+          "type": "platform_tool",
+          "args": [
+            "-b",
+            "sd_all",
+            "{ubootPath}",
+            "{imagePath}"
+          ]
+        },
+        "emmc": {
+          "type": "platform_tool",
+          "args": [
+            "-b",
+            "emmc_all",
+            "{ubootPath}",
+            "{imagePath}"
+          ]
+        }
+      }
+    }
+  ]
+}

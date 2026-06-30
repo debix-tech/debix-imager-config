@@ -1,0 +1,40 @@
+{
+  "id": "r3576-01",
+  "name": "DEBIX R3576-01",
+  "description": "Rockchip Series",
+  "ddr": "4GB LPDDR4",
+  "bootModes": [
+    "emmc"
+  ],
+  "firmwareIds": [
+    "rk3576-debian"
+  ],
+  "hardwareCheckPages": {
+    "emmc": [
+      {
+        "title": "Connect Board to PC",
+        "text": "Connect the board OTG port to your PC via USB-Type C cable.",
+        "animImageA": "assets/hardware_pre/debix-r3576-01/O0.jpg",
+        "animImageB": "assets/hardware_pre/debix-r3576-01/O1.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Enter Maskrom Mode",
+        "text": "Press and hold the Maskrom button on the board, then connect the 5V/3A power supply. Release the Maskrom button after the PC detects the device.",
+        "animImageA": "assets/hardware_pre/debix-r3576-01/O1-B1-P0.jpg",
+        "animImageB": "assets/hardware_pre/debix-r3576-01/O1-B1-P1.jpg",
+        "imageFallbackUrl": ""
+      }
+    ]
+  },
+  "postBurnPages": {
+    "emmc": [
+      {
+        "title": "Flash Complete",
+        "text": "The system will automatically restart and enter the system.",
+        "imageFallbackUrl": ""
+      }
+    ]
+  },
+  "platformId": "rockchip"
+}

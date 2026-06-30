@@ -1,0 +1,195 @@
+{
+  "id": "debix-model-c",
+  "name": "DEBIX Model C",
+  "description": "NXP i.MX 9352 Series",
+  "ddr": "1GB/2GB LPDDR4X",
+  "bootModes": [
+    "sd",
+    "emmc"
+  ],
+  "firmwareIds": [
+    "debix-model-c-ubuntu",
+    "debix-model-c-debian",
+    "debix-model-c-yocto"
+  ],
+  "hardwareCheckPages": {
+    "sd_usb": [
+      {
+        "title": "Insert MicroSD Card into USB Reader",
+        "text": "Insert the MicroSD card into a USB 3.0 card reader, then connect the reader to your PC.",
+        "animImageA": "assets/hardware_pre/debix-model-c/T0-R0.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-c/T1-R0.jpg",
+        "animImageC": "assets/hardware_pre/debix-model-c/T1-R1.jpg",
+        "imageFallbackUrl": ""
+      }
+    ],
+    "sd_board": [
+      {
+        "title": "Set Boot Mode Switch to USB Download",
+        "text": "Set the boot mode switch to '001', USB Flashing Mode.",
+        "animImageA": "assets/hardware_pre/debix-model-c/S-001.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Insert MicroSD Card into Board",
+        "text": "Insert the MicroSD card into the board's MicroSD card slot.",
+        "animImageA": "assets/hardware_pre/debix-model-c/T0.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-c/T1.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Connect Board to PC",
+        "text": "Connect the board OTG port to your PC via a USB-Type C cable.",
+        "animImageA": "assets/hardware_pre/debix-model-c/T1-O0.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-c/T1-O1.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Power On the Board",
+        "text": "Connect the 5V/3A power adapter. The board enters USB Flashing mode on power-up.",
+        "animImageA": "assets/hardware_pre/debix-model-c/T1-O1-P0.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-c/T1-O1-P1.jpg",
+        "imageFallbackUrl": ""
+      }
+    ],
+    "emmc": [
+      {
+        "title": "Set Boot Mode Switch to USB Download",
+        "text": "Set the boot mode switch to '001', USB Flashing Mode.",
+        "animImageA": "assets/hardware_pre/debix-model-c/S-001.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Connect Board to PC",
+        "text": "Connect the board OTG port to your PC via a USB-Type C cable.",
+        "animImageA": "assets/hardware_pre/debix-model-c/O0.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-c/O1.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Power On the Board",
+        "text": "Connect the 5V/3A power adapter. The board enters USB Flashing mode on power-up.",
+        "animImageA": "assets/hardware_pre/debix-model-c/O1-P0.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-c/O1-P1.jpg",
+        "imageFallbackUrl": ""
+      }
+    ],
+    "emmc_via_sd": [
+      {
+        "title": "Insert MicroSD Card into USB Reader",
+        "text": "Insert the MicroSD card into a USB 3.0 card reader, then connect the reader to your PC.",
+        "imageFallbackUrl": "",
+        "animImageA": "assets/hardware_pre/debix-model-c/T0-R0.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-c/T1-R0.jpg",
+        "animImageC": "assets/hardware_pre/debix-model-c/T1-R1.jpg"
+      }
+    ]
+  },
+  "platformId": "nxp",
+  "postBurnPages": {
+    "sd_usb": [
+      {
+        "title": "Remove MicroSD Card from USB Reader",
+        "text": "Safely eject and remove the MicroSD card from the USB card reader.",
+        "animImageA": "assets/hardware_pre/debix-model-c/T1-R1.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-c/T1-R0.jpg",
+        "animImageC": "assets/hardware_pre/debix-model-c/T0-R0.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Insert MicroSD Card into Board",
+        "text": "Insert the MicroSD card into the board's MicroSD card slot.",
+        "animImageA": "assets/hardware_pre/debix-model-c/T0.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-c/T1.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Set Boot Mode to MicroSD/SPI Flash",
+        "text": "If the board's operating system is Yocto or Ubuntu, and the board has a SPI Flash, set the dip switch to '100' and boot via SPI Flash.If the operating system is Debian and the board does not have a SPI Flash, set the dip switch to '011'.",
+        "animImageA": "assets/hardware_pre/debix-model-c/S-100-W.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-c/S-011-W.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Power On the Board",
+        "text": "Connect the power adapter and wait for the board to boot into your new system.",
+        "animImageA": "assets/hardware_pre/debix-model-c/T1-P0.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-c/T1-P1.jpg",
+        "imageFallbackUrl": ""
+      }
+    ],
+    "sd_board": [
+      {
+        "title": "Flash Complete",
+        "text": "Disconnect all board cables",
+        "image": "assets/hardware_pre/debix-model-c/T1.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Set Boot Mode to MicroSD",
+        "text": "Set the board's boot mode switch to '011', MicroSD Boot Mode.",
+        "image": "assets/hardware_pre/debix-model-c/S-011.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Power On the Board",
+        "text": "Connect the power adapter and wait for the board to boot into your new system.",
+        "animImageA": "assets/hardware_pre/debix-model-c/T1-P0.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-c/T1-P1.jpg",
+        "imageFallbackUrl": ""
+      }
+    ],
+    "emmc": [
+      {
+        "title": "Flash Complete",
+        "text": "Disconnect all board cables",
+        "image": "assets/hardware_pre/debix-model-c/A0.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Set Boot Mode to eMMC",
+        "text": "Set the board's boot mode switch to '010', eMMC Boot Mode.",
+        "image": "assets/hardware_pre/debix-model-c/S-010.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Power On the Board",
+        "text": "Connect the power adapter and wait for the board to boot into your new system.",
+        "animImageA": "assets/hardware_pre/debix-model-c/P0.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-c/P1.jpg",
+        "imageFallbackUrl": ""
+      }
+    ],
+    "emmc_via_sd": [
+      {
+        "title": "Remove MicroSD Card from USB Reader",
+        "text": "Safely eject and remove the MicroSD card from the USB card reader.",
+        "animImageA": "assets/hardware_pre/debix-model-c/T1-R1.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-c/T1-R0.jpg",
+        "animImageC": "assets/hardware_pre/debix-model-c/T0-R0.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Insert MicroSD Card into Board",
+        "text": "Insert the MicroSD card into the board MicroSD card slot.",
+        "animImageA": "assets/hardware_pre/debix-model-c/T0.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-c/T1.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Set Boot Mode to MicroSD/SPI Flash",
+        "text": "If the board's operating system is Yocto or Ubuntu, and the board has a SPI Flash, set the dip switch to '100' and boot via SPI Flash.If the operating system is Debian and the board does not have a SPI Flash, set the dip switch to '011'.",
+        "animImageA": "assets/hardware_pre/debix-model-c/S-100-W.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-c/S-011-W.jpg",
+        "imageFallbackUrl": ""
+      },
+      {
+        "title": "Power On the Board",
+        "text": "Connect the power adapter. The board will boot from SD card and automatically install the system to eMMC. This may take several minutes.",
+        "animImageA": "assets/hardware_pre/debix-model-c/P0.jpg",
+        "animImageB": "assets/hardware_pre/debix-model-c/P1.jpg",
+        "imageFallbackUrl": ""
+      }
+    ]
+  }
+}

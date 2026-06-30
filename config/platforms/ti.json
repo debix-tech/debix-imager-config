@@ -1,0 +1,8 @@
+{
+  "id": "ti",
+  "name": "Texas Instruments",
+  "logo": "assets/logos/ti.png",
+  "burnToolCommand": "",
+  "detectCommand": "",
+  "detectArgs": []
+}
